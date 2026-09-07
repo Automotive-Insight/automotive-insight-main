@@ -1,6 +1,33 @@
 const DOMAIN = 'https://automotiveinsight.com.au';
 
 // ---------------------------------------------------------------------------
+// Legacy URL redirects
+//
+// Mapped from the old WordPress site's sitemap (20 URLs, exported 07/09/2026).
+// 8 of those URLs already match the new site 1:1 and need no entry here:
+// /, /contact/, /asian-cars/, /services/, /about/, /fleet-maintenance/,
+// /faqs/, /privacy-policy/. The remaining 12 are mapped below - either to
+// their renamed equivalent, or, for the old blog posts (no blog exists on
+// the new site), to the most topically relevant page.
+// ---------------------------------------------------------------------------
+const REDIRECTS = {
+  '/european-cars-are-our-specialty/':               '/european-cars/',
+  '/warranty-service/':                              '/logbook-service/',
+  '/hybrid-and-evs/':                                '/ev-hybrid/',
+  '/terms-and-conditions-3/':                        '/terms-and-conditions/',
+  '/ev-onsite-charging-facility/':                   '/ev-hybrid/ev-charging/',
+  '/booking-form/':                                  '/contact/',
+  // Old blog posts - no equivalent post exists, so these point to the
+  // page whose topic is closest to the original post.
+  '/mechanical-issues-in-a-2019-bmw-5-series/':       '/european-cars/',
+  '/before-you-tow-a-caravan/':                       '/services/',
+  '/what-to-look-for-when-buying-a-used-ev/':         '/ev-hybrid/',
+  '/buying-a-pre-owned-2020-toyota-camry-hybrid/':    '/ev-hybrid/hybrid-servicing/',
+  '/mitsubishi-outlander-phev/':                      '/ev-hybrid/',
+  '/pre-owned-mg4/':                                  '/ev-hybrid/',
+};
+
+// ---------------------------------------------------------------------------
 // Security headers
 // ---------------------------------------------------------------------------
 function addSecurityHeaders(response) {
@@ -113,6 +140,11 @@ Sitemap: https://automotiveinsight.com.au/sitemap.xml
 export default {
   async fetch(request, env) {
     const { pathname } = new URL(request.url);
+
+    const normalizedPath = pathname === '/' || pathname.endsWith('/') ? pathname : pathname + '/';
+    if (REDIRECTS[normalizedPath]) {
+      return addSecurityHeaders(Response.redirect(DOMAIN + REDIRECTS[normalizedPath], 301));
+    }
 
     if (pathname === '/sitemap.xml') {
       return addSecurityHeaders(new Response(buildSitemap(), {
