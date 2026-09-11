@@ -694,7 +694,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       btn.disabled = false; btn.textContent = 'Request booking';
       if (errEl) errEl.style.display = 'block';
     } else if (redirectOnSuccess) {
-      window.location.assign('/thank-you');
+      setTimeout(() => window.location.assign('/thank-you'), 400);
     } else {
       formEl.reset(); btn.textContent = 'Sent!';
       const successEl = document.getElementById(prefix+'success');
