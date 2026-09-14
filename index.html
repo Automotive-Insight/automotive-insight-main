@@ -2729,7 +2729,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   });
 
   document.getElementById('bookingForm').addEventListener('submit', e => { e.preventDefault(); _submitToSupabase(e.target, 'm-', true); });
-  document.getElementById('contactForm').addEventListener('submit', e => { e.preventDefault(); _submitToSupabase(e.target, 'c-', false); });
+  document.getElementById('contactForm').addEventListener('submit', e => { e.preventDefault(); _submitToSupabase(e.target, 'c-', true); });
 
   /* Modal */
   const overlay  = document.getElementById('bookingModal');
