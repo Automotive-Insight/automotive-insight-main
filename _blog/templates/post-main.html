@@ -1,0 +1,37 @@
+  <article class="page-content">
+    <figure class="post-figure">
+      <img src="{{IMAGE}}" alt="{{IMAGE_ALT}}" width="1200" height="675" fetchpriority="high" decoding="async">
+    </figure>
+
+    <div class="post-body">
+{{BODY}}
+
+      <aside class="post-visit" aria-label="Book with Automotive Insight">
+        <h2>Book with Automotive Insight</h2>
+        <p class="visit-lead">{{VISIT_LEAD}} <a href="{{SERVICE_HREF}}">{{SERVICE_LABEL}}</a></p>
+        <p class="visit-rating"><span class="stars" aria-hidden="true">★★★★★</span><strong>5.0</strong> from <a href="/reviews/">206 Google reviews</a></p>
+        <div class="visit-grid">
+          <p><span class="lbl">Workshop</span><a href="https://maps.google.com/?q=206A+Stubbs+Terrace+Shenton+Park+WA+6008" target="_blank" rel="noopener">206A Stubbs Terrace<br>Shenton Park WA 6008</a></p>
+          <p><span class="lbl">Hours</span>Monday to Friday<br>7:30am to 5:00pm</p>
+          <p><span class="lbl">Phone / SMS</span><a href="tel:0482097182">0482 097 182</a></p>
+        </div>
+        <div class="visit-ctas">
+          <button class="btn btn-gold" onclick="openModal()">Book a service</button>
+          <a href="tel:0482097182" class="btn btn-ghost-white">Call 0482 097 182</a>
+        </div>
+      </aside>
+
+{{FAQ_BLOCK}}
+{{SOURCES_BLOCK}}
+    </div>
+  </article>
+
+  <section class="post-related" aria-label="Related reading">
+    <div class="post-related-inner">
+      <p class="ph-label">Keep reading</p>
+      <h2 class="ph-heading">More from the workshop.</h2>
+      <div class="blog-grid">
+{{RELATED_CARDS}}
+      </div>
+    </div>
+  </section>
