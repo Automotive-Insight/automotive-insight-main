@@ -13,3 +13,8 @@ _archive/**
 _archive
 _blog/**
 _blog
+# macOS metadata
+._*
+**/._*
+.DS_Store
+**/.DS_Store
