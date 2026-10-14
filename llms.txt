@@ -29,3 +29,20 @@ Location: Shenton Park, WA
 - Services: https://automotiveinsight.com.au/services/
 - Contact / Book: https://automotiveinsight.com.au/contact/
 - About: https://automotiveinsight.com.au/about/
+
+<!-- BLOG:START -->
+## Blog
+- Blog index: https://automotiveinsight.com.au/blog/
+- PHEV servicing in Perth: what plug-in hybrid owners need to know: https://automotiveinsight.com.au/blog/phev-servicing-perth/
+- Pre-purchase hybrid car inspection in Perth: what we actually test: https://automotiveinsight.com.au/blog/pre-purchase-hybrid-inspection-perth/
+- Buying a used Toyota RAV4 Hybrid in Perth: what to check first: https://automotiveinsight.com.au/blog/toyota-rav4-hybrid-buying-guide-perth/
+- Fleet vehicle maintenance in Perth: running hybrid and electric fleets: https://automotiveinsight.com.au/blog/fleet-vehicle-maintenance-perth/
+- Mitsubishi Outlander PHEV: common issues and servicing in Perth: https://automotiveinsight.com.au/blog/mitsubishi-outlander-phev-service-guide-perth/
+- Buying a Honda CR-V Hybrid in Perth: what to look at: https://automotiveinsight.com.au/blog/honda-crv-hybrid-buying-guide-perth/
+- Lexus hybrid servicing in Perth: ES, UX, NX and RX: https://automotiveinsight.com.au/blog/lexus-hybrid-servicing-perth/
+- Electric vehicle servicing in Perth: what EV owners actually need: https://automotiveinsight.com.au/blog/electric-vehicle-service-perth/
+- Buying a 2021 to 2023 Toyota Camry Hybrid in Perth: https://automotiveinsight.com.au/blog/toyota-camry-hybrid-2021-2023-buying-guide/
+- Towing a caravan: what your car needs before you leave Perth: https://automotiveinsight.com.au/blog/towing-caravan-car-check-perth/
+- European car servicing in Perth: Audi, BMW, Mercedes-Benz and Volkswagen: https://automotiveinsight.com.au/blog/european-car-servicing-perth/
+- Hybrid car servicing in Perth: what actually gets done differently: https://automotiveinsight.com.au/blog/hybrid-car-servicing-perth/
+<!-- BLOG:END -->
